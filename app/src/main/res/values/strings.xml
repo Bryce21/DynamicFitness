@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">DynamicFitness</string>
+    <!--Chest-->
+    <string name="bench_press">Bench press</string>
+    <string name="pushup">Pushup</string>
+    <!--Arms-->
+    <string name="bicep_curl">Bicep curl</string>
+    <string name="forearm_curl">Forearm curl</string>
+    <!--Shoulders-->
+    <string name="shoulder_press">Shoulder press</string>
+    <string name="army_press">Army press</string>
+    <!--Legs-->
+    <string name="squat">Squat</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="calf_raise">Calf raise</string>
+    <!--Back-->
+
+    <!--Tricep-->
+    <string name="skull_crushers">Skull crushers</string>
+    <string name="dips">Dips</string>
+
+
 </resources>
