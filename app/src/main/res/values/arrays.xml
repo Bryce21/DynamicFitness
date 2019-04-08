@@ -1,30 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="arms">
+    <string-array name="Arms">
         <item>@string/bicep_curl</item>
         <item>@string/forearm_curl</item>
-    </string-array>
-
-
-    <string-array name="chest">
-        <item name="bench_press">Bench press</item>
-        <item name="pushup">Pushup</item>
-    </string-array>
-
-    <string-array name="shoulders">
-        <item name="shoulder_press">Shoulder press</item>
-        <item name="army_press">Army press</item>
-    </string-array>
-
-    <string-array name="triceps">
         <item name="skull_crushers">Skull crushers</item>
         <item name="dips">Dips</item>
     </string-array>
 
-    <string-array name="legs">
+
+    <string-array name="Chest">
+        <item name="bench_press">Bench press</item>
+        <item name="pushup">Pushup</item>
+    </string-array>
+
+    <string-array name="Shoulders">
+        <item name="shoulder_press">Shoulder press</item>
+        <item name="army_press">Army press</item>
+    </string-array>
+
+
+    <string-array name="Legs">
         <item name="squat">Squat</item>
         <item name="deadlift">Deadlift</item>
         <item name="calf_raise">Calf raise</item>
+    </string-array>
+
+
+    <string-array name="Back">
+        <item name="row">@string/row</item>
+    </string-array>
+
+    <string-array name="Core">
+        <item name="crunch">@string/crunch</item>
+    </string-array>
+
+
+
+    <string-array name="exerciseGroups">
+        <item name="group_arm">@string/group_arm</item>
+        <item name="group_legs">@string/group_legs</item>
+        <item name="group_back">@string/group_back</item>
+        <item name="group_shoulder">@string/group_shoulder</item>
+        <item name="group_core">@string/group_core</item>
+        <item name="group_chest">@string/group_chest</item>
     </string-array>
 
 

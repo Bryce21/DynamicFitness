@@ -14,10 +14,23 @@
     <string name="deadlift">Deadlift</string>
     <string name="calf_raise">Calf raise</string>
     <!--Back-->
-
+    <string name="row">Row</string>
     <!--Tricep-->
     <string name="skull_crushers">Skull crushers</string>
     <string name="dips">Dips</string>
+
+
+    <!--Core-->
+    <string name="crunch">Crunches</string>
+
+
+    <!--Exercise groups-->
+    <string name="group_arm">Arms</string>
+    <string name="group_legs">Legs</string>
+    <string name="group_back">Back</string>
+    <string name="group_shoulder">Shoulders</string>
+    <string name="group_core">Core</string>
+    <string name="group_chest">Chest</string>
 
 
 </resources>

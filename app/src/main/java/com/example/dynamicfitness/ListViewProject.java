@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,15 +18,17 @@ public class ListViewProject extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
 
-        for(int i = 0; i<50; i++){
-            adapter.add("item_"+i);
-        }
+        int arrayResource = getResources().getIdentifier("exerciseGroups", "array", ListViewProject.this.getPackageName());
+        final String[] exerciseGroups = getResources().getStringArray(arrayResource);
+
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, exerciseGroups);
+
 
         ListView listView = (ListView)findViewById(R.id.ListView01);
         listView.setAdapter(adapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -36,16 +37,9 @@ public class ListViewProject extends AppCompatActivity {
                                     int position,
                                     long id) {
                 Intent appInfo = new Intent(ListViewProject.this, exerciseList.class);
-                appInfo.putExtra("name", "legs");
+                appInfo.putExtra("name", exerciseGroups[position]);
                 startActivity(appInfo);
             }
         });
-
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-        getSupportActionBar().setTitle("");
-
-
-
     }
 }
