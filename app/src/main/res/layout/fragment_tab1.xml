@@ -6,6 +6,7 @@
     tools:context=".Tab1">
 
     <ExpandableListView
+        android:background="#000000"
         android:id="@+id/lvExp"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
