@@ -1,16 +1,22 @@
 package com.example.dynamicfitness;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -63,165 +69,25 @@ public class Tab1 extends Fragment {
         return fragment;
     }
 
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
+        List<String> listDataHeader = new ArrayList<>();
+        String[] mItemHeaders = getResources().getStringArray(R.array.items_array_expandable_level_one);
+
+        Collections.addAll(listDataHeader, mItemHeaders);
+        ExpandableListView mExpandableListView = (ExpandableListView) getView().findViewById(R.id.lvExp);
+
+        if (mExpandableListView != null) {
+            ParentLevelAdapter parentLevelAdapter = new ParentLevelAdapter(getActivity(), listDataHeader);
+            mExpandableListView.setAdapter(parentLevelAdapter);
         }
-
-        // get the listview
-        expListView = (ExpandableListView) v.findViewById(R.id.lvExp);
-
-        // preparing list data
-        prepareListData();
-
-        listAdapter = new ExpandableListAdapter(this.getContext(), listDataHeader, listDataChild);
-
-        // setting list adapter
-        expListView.setAdapter(listAdapter);
-
-        // Listview Group click listener
-        expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
-
-            @Override
-            public boolean onGroupClick(ExpandableListView parent, View v,
-                                        int groupPosition, long id) {
-                return false;
-            }
-        });
-
-        // Listview Group expanded listener
-        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-
-            @Override
-            public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getActivity().getApplicationContext(),
-                        listDataHeader.get(groupPosition) + " Expanded",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Listview Group collasped listener
-        expListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-
-            @Override
-            public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getActivity().getApplicationContext(),
-                        listDataHeader.get(groupPosition) + " Collapsed",
-                        Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        // Listview on child click listener
-        expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-                // TODO Auto-generated method stub
-                Toast.makeText(
-                        getActivity().getApplicationContext(),
-                        listDataHeader.get(groupPosition)
-                                + " : "
-                                + listDataChild.get(
-                                listDataHeader.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT)
-                        .show();
-                return false;
-            }
-        });
-    }
-
-    /*
-     * Preparing the list data
-     */
-    private void prepareListData() {
-        listDataHeader = new ArrayList<String>();
-        listDataChild = new HashMap<String, List<String>>();
-
-        // Adding child data
-        listDataHeader.add("Arms");
-        listDataHeader.add("Neck");
-        listDataHeader.add("Shoulders");
-        listDataHeader.add("Chest");
-        listDataHeader.add("Core");
-        listDataHeader.add("Back");
-        listDataHeader.add("Thighs");
-        listDataHeader.add("Glutes");
-        listDataHeader.add("Calves");
-        listDataHeader.add("Whole Body");
-
-        // Adding child data
-        List<String> arm = new ArrayList<String>();
-        arm.add("Beginner");
-        arm.add("Intermediate");
-        arm.add("Advanced");
-
-
-        List<String> neck = new ArrayList<String>();
-        neck.add("Beginner");
-        neck.add("Intermediate");
-        neck.add("Advanced");
-
-        List<String> shoulders = new ArrayList<String>();
-        shoulders.add("Beginner");
-        shoulders.add("Intermediate");
-        shoulders.add("Advanced");
-
-        List<String> chest = new ArrayList<String>();
-        chest.add("Beginner");
-        chest.add("Intermediate");
-        chest.add("Advanced");
-
-        List<String> core = new ArrayList<String>();
-        core.add("Beginner");
-        core.add("Intermediate");
-        core.add("Advanced");
-
-        List<String> back = new ArrayList<String>();
-        back.add("Beginner");
-        back.add("Intermediate");
-        back.add("Advanced");
-
-        List<String> thighs = new ArrayList<String>();
-        thighs.add("Beginner");
-        thighs.add("Intermediate");
-        thighs.add("Advanced");
-
-        List<String> glutes = new ArrayList<String>();
-        glutes.add("Beginner");
-        glutes.add("Intermediate");
-        glutes.add("Advanced");
-
-        List<String> calves = new ArrayList<String>();
-        calves.add("Beginner");
-        calves.add("Intermediate");
-        calves.add("Advanced");
-
-        List<String> wholeBody = new ArrayList<String>();
-        wholeBody.add("Beginner");
-        wholeBody.add("Intermediate");
-        wholeBody.add("Advanced");
-
-        listDataChild.put(listDataHeader.get(0), arm); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), neck);
-        listDataChild.put(listDataHeader.get(2), shoulders);
-        listDataChild.put(listDataHeader.get(3), chest);
-        listDataChild.put(listDataHeader.get(4), core);
-        listDataChild.put(listDataHeader.get(5), back);
-        listDataChild.put(listDataHeader.get(6), thighs);
-        listDataChild.put(listDataHeader.get(7), glutes);
-        listDataChild.put(listDataHeader.get(8), calves);
-        listDataChild.put(listDataHeader.get(9), wholeBody);
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_tab1, container, false);
         return v;
@@ -239,7 +105,7 @@ public class Tab1 extends Fragment {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
-        } else {
+        }  else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
