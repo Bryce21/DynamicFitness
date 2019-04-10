@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arms">
+        <item>@string/bicep_curl</item>
+        <item>@string/forearm_curl</item>
+    </string-array>
+
+
+    <string-array name="chest">
+        <item name="bench_press">Bench press</item>
+        <item name="pushup">Pushup</item>
+    </string-array>
+
+    <string-array name="shoulders">
+        <item name="shoulder_press">Shoulder press</item>
+        <item name="army_press">Army press</item>
+    </string-array>
+
+    <string-array name="triceps">
+        <item name="skull_crushers">Skull crushers</item>
+        <item name="dips">Dips</item>
+    </string-array>
+
+    <string-array name="legs">
+        <item name="squat">Squat</item>
+        <item name="deadlift">Deadlift</item>
+        <item name="calf_raise">Calf raise</item>
+    </string-array>
+
+
+</resources>
