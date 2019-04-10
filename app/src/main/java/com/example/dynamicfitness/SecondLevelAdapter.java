@@ -2,6 +2,7 @@ package com.example.dynamicfitness;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,17 +18,33 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter
     private final Context mContext;
     private final List<String> mListDataHeader;
     private final Map<String, List<String>> mListDataChild;
+    private final String parentName;
 
-    public SecondLevelAdapter(Context mContext, List<String> mListDataHeader, Map<String, List<String>> mListDataChild) {
+    public SecondLevelAdapter(Context mContext, List<String> mListDataHeader, Map<String, List<String>> mListDataChild, String parentName) {
         this.mContext = mContext;
         this.mListDataHeader = mListDataHeader;
         this.mListDataChild = mListDataChild;
+        this.parentName = parentName;
     }
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return this.mListDataChild.get(this.mListDataHeader.get(groupPosition))
-                .get(childPosition);
+//        Log.v("getChild() call","Group position: "+Integer.toString(groupPosition));
+//        Log.v("getChild() call","child position: "+Integer.toString(childPosition));
+//        Log.v("getChild", this.parentName);
+//        for(String s: this.mListDataHeader){
+//            Log.v("mListDataHeader", s);
+//        }
+//        for(Map.Entry<String,List<String>> entry : this.mListDataChild.entrySet()) {
+//            Log.v("mListDataChild key", entry.getKey());
+//            for(String s: entry.getValue()){
+//                Log.v("mListDataChild value", s);
+//            }
+//        }
+
+        Log.v("getChild unique", this.parentName+"_"+this.mListDataHeader.get(childPosition));
+        Log.v("whatsReturning", (String) this.mListDataChild.get(this.mListDataHeader.get(groupPosition)).get(childPosition));
+        return this.mListDataChild.get(this.mListDataHeader.get(groupPosition)).get(childPosition);
     }
 
     @Override
