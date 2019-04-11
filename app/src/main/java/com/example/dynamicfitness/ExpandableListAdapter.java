@@ -5,12 +5,14 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -20,6 +22,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<ListItem>> _listDataChild;
+    public HashMap<String, Boolean> checkedState = new HashMap<String, Boolean>();
 
     public ExpandableListAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List<ListItem>> listChildData) {
@@ -52,6 +55,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         name = (TextView)convertView.findViewById(R.id.lblListItem);
         name.setText(item.exerciseName);
 
+
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,9 +67,34 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         });
 
 
-        CheckBox selected;
+        final CheckBox selected;
         selected = (CheckBox) convertView.findViewById(R.id.toggleButtonSelected);
-        selected.setChecked(item.toggleButtonSelectedBoolean);
+        boolean value;
+        if (checkedState.get(item.exerciseName) == null){
+            value = false;
+        } else if (checkedState.get(item.exerciseName)){
+            value = true;
+        } else {
+            value = false;
+        }
+        checkedState.put(item.exerciseName, value);
+        selected.setChecked(checkedState.get(item.exerciseName));
+
+        Log.v("buttonLog expandable", "in expandableListAdapter");
+        for(String key: checkedState.keySet()){
+            Log.v("buttonLogInteresting", "key: "+key+" value: "+checkedState.get(key));
+        }
+
+
+        selected.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Log.v("buttonLog", "Clicked. "+item.exerciseName + " "+ !checkedState.get(item.exerciseName));
+                checkedState.put(item.exerciseName, !checkedState.get(item.exerciseName));
+                selected.setChecked(checkedState.get(item.exerciseName));
+            }
+        });
+
         return convertView;
     }
 
