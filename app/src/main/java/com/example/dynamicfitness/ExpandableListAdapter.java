@@ -69,7 +69,21 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
         final CheckBox selected;
         selected = (CheckBox) convertView.findViewById(R.id.toggleButtonSelected);
-        checkedState.put(item.exerciseName, false);
+        boolean value;
+        if (checkedState.get(item.exerciseName) == null){
+            value = false;
+        } else if (checkedState.get(item.exerciseName)){
+            value = true;
+        } else {
+            value = false;
+        }
+        checkedState.put(item.exerciseName, value);
+        selected.setChecked(checkedState.get(item.exerciseName));
+
+        Log.v("buttonLog expandable", "in expandableListAdapter");
+        for(String key: checkedState.keySet()){
+            Log.v("buttonLogInteresting", "key: "+key+" value: "+checkedState.get(key));
+        }
 
 
         selected.setOnClickListener(new View.OnClickListener(){
@@ -78,12 +92,6 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                 Log.v("buttonLog", "Clicked. "+item.exerciseName + " "+ !checkedState.get(item.exerciseName));
                 checkedState.put(item.exerciseName, !checkedState.get(item.exerciseName));
                 selected.setChecked(checkedState.get(item.exerciseName));
-
-                if(checkedState.containsValue(true)){
-                    Log.v("buttonLog", "Button should be enabled");
-                } else {
-                    Log.v("buttonLog", "Button should be disabled");
-                }
             }
         });
 
