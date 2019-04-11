@@ -1,13 +1,18 @@
 package com.example.dynamicfitness;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -63,6 +68,7 @@ public class Tab1 extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -167,11 +173,14 @@ public class Tab1 extends Fragment {
         listDataChild.put(listDataHeader.get(4), back);
         listDataChild.put(listDataHeader.get(5), legs);
 
+        if (mExpandableListView != null) {
+            ParentLevelAdapter parentLevelAdapter = new ParentLevelAdapter(getActivity(), listDataHeader);
+            mExpandableListView.setAdapter(parentLevelAdapter);
+        }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_tab1, container, false);
         return v;
@@ -189,7 +198,7 @@ public class Tab1 extends Fragment {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
-        } else {
+        }  else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
