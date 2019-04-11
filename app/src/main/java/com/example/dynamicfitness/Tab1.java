@@ -1,6 +1,9 @@
 package com.example.dynamicfitness;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,7 +18,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -93,10 +99,55 @@ public class Tab1 extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.v("buttonLog", "button is clicked");
-                for(String key: checkedState.keySet()){
-                    Log.v("buttonLog", "key: "+key.toString()+" value: "+checkedState.get(key));
-                }
+
+//                for(String key: checkedState.keySet()){
+//                    Log.v("buttonLog", "key: "+key.toString()+" value: "+checkedState.get(key));
+//                }
+
+
+                // TODO add check that there is at least one true value
+                // TODO set all checkbox values back to false
+                new AlertDialog.Builder(getContext())
+                        .setTitle("Save workout")
+                        .setMessage("Are you sure you want to save the selected exercises as a workout?")
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                SharedPreferences pref = getContext().getSharedPreferences("savedWorkoutLists", 0); // 0 - for private mode
+                                SharedPreferences.Editor editor = pref.edit();
+                                //Get current count of saved workouts. savedWorkoutsCount in preferences. 0 by default.
+                                int savedWorkoutsCount = pref.getInt("savedWorkoutCount", 0) ;
+                                // Update new workout count
+                                editor.putInt("savedWorkoutCount", ++savedWorkoutsCount);
+//                                Log.v("savedWorkoutCount", Integer.toString(savedWorkoutsCount));
+                                String workoutName = "workout_"+Integer.toString(savedWorkoutsCount);
+
+                                // Grab all the true values
+                                Set<String> trues = new HashSet<String>();
+                                for (Map.Entry<String, Boolean> e : checkedState.entrySet()) {
+                                    boolean b = e.getValue();
+                                    if ( b ) {
+                                        trues.add(e.getKey());
+                                    }
+                                }
+
+                                editor.putStringSet(workoutName,trues);
+                                editor.apply();
+
+                                SharedPreferences pref2 = getContext().getSharedPreferences("savedWorkoutLists", 0); // 0 - for private mode
+                                Map<String,?> keys = pref.getAll();
+
+                                for(Map.Entry<String,?> entry : keys.entrySet()){
+                                    Log.d("map values",entry.getKey() + ": " +
+                                            entry.getValue().toString());
+                                }
+                            }
+                        })
+                        // A null listener allows the button to dismiss the dialog and take no further action.
+                        .setNegativeButton(android.R.string.no, null)
+                        .show();
+
             }
+
         });
 
         // Listview Group click listener
