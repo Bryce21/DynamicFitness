@@ -1,130 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="arms">
-        <item>@string/bicep_curl</item>
-        <item>@string/forearm_curl</item>
+    <string-array name="Arms">
+        <item name="skull_crushers">Skull crushers</item>
+        <item name="dips">Dips</item>
     </string-array>
 
 
-    <string-array name="chest">
+    <string-array name="Chest">
         <item name="bench_press">Bench press</item>
         <item name="pushup">Pushup</item>
     </string-array>
 
-    <string-array name="shoulders">
+    <string-array name="Shoulders">
         <item name="shoulder_press">Shoulder press</item>
         <item name="army_press">Army press</item>
     </string-array>
 
-    <string-array name="triceps">
-        <item name="skull_crushers">Skull crushers</item>
-        <item name="dips">Dips</item>
-    </string-array>
-    
-    
-    <string-array name="Arms_Intermediate">
-        <item>@string/bicep_curl</item>
-        <item>@string/forearm_curl</item>
-    </string-array>
 
-    <string-array name="legs">
+    <string-array name="Legs">
         <item name="squat">Squat</item>
         <item name="deadlift">Deadlift</item>
         <item name="calf_raise">Calf raise</item>
     </string-array>
 
-    <string-array name="items_array_expandable_level_one">
-        <item name="group_arm">Arm</item>
-        <item name="group_legs">Legs</item>
-        <item name="group_back">Back</item>
-        <item name="group_shoulder">Shoulders</item>
-        <item name="group_core">Core</item>
-        <item name="group_chest">Chest</item>
+
+    <string-array name="Back">
+        <item name="row">Row</item>
     </string-array>
 
-    <string-array name="Arm_Beginner">
-        <item>B1</item>
-        <item>B2</item>
+    <string-array name="Core">
+        <item name="crunch">Crunch</item>
     </string-array>
-    <string-array name="Arm_Intermediate">
-        <item>B3</item>
-    </string-array>
-
-    <string-array name="Arm_Advanced">
-        <item>B4</item>
-    </string-array>
-
-
-    <string-array name="Back_Beginner">
-        <item>B1</item>
-        <item>B2</item>
-    </string-array>
-    <string-array name="Back_Intermediate">
-        <item>B3</item>
-    </string-array>
-
-    <string-array name="Back_Advanced">
-        <item>B4</item>
-    </string-array>
-
-    <string-array name="Legs_Beginner">
-        <item>B1</item>
-        <item>B2</item>
-    </string-array>
-    <string-array name="Legs_Intermediate">
-        <item>B3</item>
-    </string-array>
-
-    <string-array name="Legs_Advanced">
-        <item>B4</item>
-    </string-array>
-
-    <string-array name="Shoulders_Beginner">
-        <item>B1</item>
-        <item>B2</item>
-    </string-array>
-    <string-array name="Shoulders_Intermediate">
-        <item>B3</item>
-    </string-array>
-
-    <string-array name="Shoulders_Advanced">
-        <item>B4</item>
-    </string-array>
-
-    <string-array name="Core_Beginner">
-        <item>B1</item>
-        <item>B2</item>
-    </string-array>
-    <string-array name="Core_Intermediate">
-        <item>B3</item>
-    </string-array>
-
-    <string-array name="Core_Advanced">
-        <item>B4</item>
-    </string-array>
-
-    <string-array name="Chest_Beginner">
-        <item>B1</item>
-        <item>B2</item>
-    </string-array>
-    <string-array name="Chest_Intermediate">
-        <item>B3</item>
-    </string-array>
-
-    <string-array name="Chest_Advanced">
-        <item>B4</item>
-    </string-array>
-
-    <string-array name="items_array_expandable_other_child">
-        <item>Beginner</item>
-        <item>Intermediate</item>
-        <item>Advanced</item>
-    </string-array>
-
-    <string-array name="items_array_expandable_level_three">
-        <item>Child Level 01</item>
-        <item>Child Level 02</item>
-    </string-array>
-
 
 </resources>
