@@ -11,6 +11,7 @@ import android.widget.ExpandableListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class Tab1 extends Fragment {
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
     List<String> listDataHeader;
-    HashMap<String, List<String>> listDataChild;
+    HashMap<String, List<ListItem>> listDataChild;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -140,82 +141,31 @@ public class Tab1 extends Fragment {
      */
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
-        listDataChild = new HashMap<String, List<String>>();
+        listDataChild = new HashMap<String, List<ListItem>>();
 
         // Adding child data
         listDataHeader.add("Arms");
-        listDataHeader.add("Neck");
         listDataHeader.add("Shoulders");
         listDataHeader.add("Chest");
         listDataHeader.add("Core");
         listDataHeader.add("Back");
-        listDataHeader.add("Thighs");
-        listDataHeader.add("Glutes");
-        listDataHeader.add("Calves");
-        listDataHeader.add("Whole Body");
-
-        // Adding child data
-        List<String> arm = new ArrayList<String>();
-        arm.add("Beginner");
-        arm.add("Intermediate");
-        arm.add("Advanced");
+        listDataHeader.add("Legs");
 
 
-        List<String> neck = new ArrayList<String>();
-        neck.add("Beginner");
-        neck.add("Intermediate");
-        neck.add("Advanced");
+        ArrayList<ListItem> arm = changeStringArrayToListItemArrayList("Arms");
+        ArrayList<ListItem> shoulders = changeStringArrayToListItemArrayList("Shoulders");
+        ArrayList<ListItem> chest = changeStringArrayToListItemArrayList("Chest");
+        ArrayList<ListItem> core = changeStringArrayToListItemArrayList("Core");
+        ArrayList<ListItem> back = changeStringArrayToListItemArrayList("Back");
+        ArrayList<ListItem> legs = changeStringArrayToListItemArrayList("Legs");
 
-        List<String> shoulders = new ArrayList<String>();
-        shoulders.add("Beginner");
-        shoulders.add("Intermediate");
-        shoulders.add("Advanced");
 
-        List<String> chest = new ArrayList<String>();
-        chest.add("Beginner");
-        chest.add("Intermediate");
-        chest.add("Advanced");
-
-        List<String> core = new ArrayList<String>();
-        core.add("Beginner");
-        core.add("Intermediate");
-        core.add("Advanced");
-
-        List<String> back = new ArrayList<String>();
-        back.add("Beginner");
-        back.add("Intermediate");
-        back.add("Advanced");
-
-        List<String> thighs = new ArrayList<String>();
-        thighs.add("Beginner");
-        thighs.add("Intermediate");
-        thighs.add("Advanced");
-
-        List<String> glutes = new ArrayList<String>();
-        glutes.add("Beginner");
-        glutes.add("Intermediate");
-        glutes.add("Advanced");
-
-        List<String> calves = new ArrayList<String>();
-        calves.add("Beginner");
-        calves.add("Intermediate");
-        calves.add("Advanced");
-
-        List<String> wholeBody = new ArrayList<String>();
-        wholeBody.add("Beginner");
-        wholeBody.add("Intermediate");
-        wholeBody.add("Advanced");
-
-        listDataChild.put(listDataHeader.get(0), arm); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), neck);
-        listDataChild.put(listDataHeader.get(2), shoulders);
-        listDataChild.put(listDataHeader.get(3), chest);
-        listDataChild.put(listDataHeader.get(4), core);
-        listDataChild.put(listDataHeader.get(5), back);
-        listDataChild.put(listDataHeader.get(6), thighs);
-        listDataChild.put(listDataHeader.get(7), glutes);
-        listDataChild.put(listDataHeader.get(8), calves);
-        listDataChild.put(listDataHeader.get(9), wholeBody);
+        listDataChild.put(listDataHeader.get(0), arm);
+        listDataChild.put(listDataHeader.get(1), shoulders);
+        listDataChild.put(listDataHeader.get(2), chest);
+        listDataChild.put(listDataHeader.get(3), core);
+        listDataChild.put(listDataHeader.get(4), back);
+        listDataChild.put(listDataHeader.get(5), legs);
 
     }
 
@@ -264,5 +214,19 @@ public class Tab1 extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+
+    private ArrayList<ListItem> changeStringArrayToListItemArrayList(String group){
+        int arrayResource = getResources().getIdentifier(group, "array", getActivity().getPackageName());
+        List<String> stringData = Arrays.asList(getResources().getStringArray(arrayResource));
+        ArrayList<ListItem> correctData = new ArrayList<ListItem>();
+        for (String s: stringData){
+            ListItem item = new ListItem();
+            item.exerciseName = s;
+            item.toggleButtonSelectedBoolean = false;
+            correctData.add(item);
+        }
+        return correctData;
     }
 }
