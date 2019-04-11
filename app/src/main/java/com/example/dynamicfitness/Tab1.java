@@ -4,9 +4,11 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
@@ -79,9 +81,23 @@ public class Tab1 extends Fragment {
         prepareListData();
 
         listAdapter = new ExpandableListAdapter(this.getContext(), listDataHeader, listDataChild);
+        final HashMap<String, Boolean> checkedState = listAdapter.checkedState;
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+
+
+        final Button btn = (Button) v.findViewById(R.id.saveButton);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.v("buttonLog", "button is clicked");
+                for(String key: checkedState.keySet()){
+                    Log.v("buttonLog", "key: "+key.toString()+" value: "+checkedState.get(key));
+                }
+            }
+        });
 
         // Listview Group click listener
         expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
