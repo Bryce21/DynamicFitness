@@ -49,7 +49,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = infalInflater.inflate(R.layout.list_item, null);
         }
         TextView name;
-        name = (TextView)convertView.findViewById(R.id.lblListItem);
+        name = (TextView) convertView.findViewById(R.id.lblListItem);
         name.setText(item.exerciseName);
 
         name.setOnClickListener(new View.OnClickListener() {
