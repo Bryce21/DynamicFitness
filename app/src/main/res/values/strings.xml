@@ -3,4 +3,20 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="Dips_video">https://www.youtube.com/watch?v=VYgVTinbx_A</string>
+    <string name="Skullcrushers_video">https://www.youtube.com/watch?v=ir5PsbniVSc</string>
+    <string name="ShoulderPress_video">https://www.youtube.com/watch?v=qEwKCR5JCog</string>
+    <string name="Armypress_video">https://www.youtube.com/watch?v=tPDaHqvmT2g</string>
+    <string name="BenchPress_video">https://www.youtube.com/watch?v=rT7DgCr-3pg</string>
+    <string name="Pushup_video">https://www.youtube.com/watch?v=IODxDxX7oi4</string>
+    <string name="Crunch_video">https://www.youtube.com/watch?v=JVwH-JsiwNI</string>
+    <string name="Row_video">https://www.youtube.com/watch?v=QFq5jdwWwX4</string>
+    <string name="Squat_video">https://www.youtube.com/watch?v=MVMNk0HiTMg</string>
+    <string name="Deadlift_video">https://www.youtube.com/watch?v=-4qRntuXBSc</string>
+    <string name="CalfRaise_video">https://www.youtube.com/watch?v=-M4-G8p8fmc</string>
+
+    
+
 </resources>
