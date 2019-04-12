@@ -16,16 +16,16 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-public class ExpandableListAdapter extends BaseExpandableListAdapter {
+public class ExpandableTab2 extends BaseExpandableListAdapter {
 
     private Context _context;
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
-    private HashMap<String, List<ListItem>> _listDataChild;
-    public HashMap<String, Boolean> checkedState = new HashMap<String, Boolean>();
+    private HashMap<String, List<String>> _listDataChild;
 
-    public ExpandableListAdapter(Context context, List<String> listDataHeader,
-                                  HashMap<String, List<ListItem>> listChildData) {
+
+    public ExpandableTab2(Context context, List<String> listDataHeader,
+                          HashMap<String, List<String>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;
         this._listDataChild = listChildData;
@@ -45,56 +45,29 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 
-        final ListItem item = (ListItem) getChild(groupPosition, childPosition);
+        final String item = (String) getChild(groupPosition, childPosition);
 
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.list_item, null);
+            convertView = infalInflater.inflate(R.layout.tab2_list_item, null);
         }
         TextView name;
         name = (TextView)convertView.findViewById(R.id.lblListItem);
-        name.setText(item.exerciseName);
+        name.setText(item);
 
 
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("myLog onClick", item.exerciseName);
+                Log.v("myLog onClick", item);
                 Intent intent = new Intent(_context, exerciseDescription.class);
-                intent.putExtra("exerciseName", item.exerciseName);
+                intent.putExtra("exerciseName", item);
                 _context.startActivity(intent);
             }
         });
 
 
-        final CheckBox selected;
-        selected = (CheckBox) convertView.findViewById(R.id.toggleButtonSelected);
-        boolean value;
-        if (checkedState.get(item.exerciseName) == null){
-            value = false;
-        } else if (checkedState.get(item.exerciseName)){
-            value = true;
-        } else {
-            value = false;
-        }
-        checkedState.put(item.exerciseName, value);
-        selected.setChecked(checkedState.get(item.exerciseName));
-
-        Log.v("buttonLog expandable", "in expandableListAdapter");
-        for(String key: checkedState.keySet()){
-            Log.v("buttonLogInteresting", "key: "+key+" value: "+checkedState.get(key));
-        }
-
-
-        selected.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Log.v("buttonLog", "Clicked. "+item.exerciseName + " "+ !checkedState.get(item.exerciseName));
-                checkedState.put(item.exerciseName, !checkedState.get(item.exerciseName));
-                selected.setChecked(checkedState.get(item.exerciseName));
-            }
-        });
 
         return convertView;
     }
