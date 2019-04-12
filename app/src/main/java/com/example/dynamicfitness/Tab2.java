@@ -1,12 +1,22 @@
 package com.example.dynamicfitness;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ExpandableListView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -23,25 +33,22 @@ public class Tab2 extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+
+    View v;
+    ExpandableTab2 listAdapter;
+    ExpandableListView expListView;
+    List<String> listDataHeader;
+    HashMap<String, List<String>> listDataChild;
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
-    public Tab2() {
-        // Required empty public constructor
-    }
+    public Tab2() {}
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Tab2.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static Tab2 newInstance(String param1, String param2) {
         Tab2 fragment = new Tab2();
         Bundle args = new Bundle();
@@ -49,6 +56,44 @@ public class Tab2 extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+    }
+
+
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+
+        // get the listview
+        expListView = (ExpandableListView) v.findViewById(R.id.lvExp2);
+
+        // preparing list data
+        prepareListData();
+
+        listAdapter = new ExpandableTab2(this.getContext(), listDataHeader, listDataChild);
+
+        // setting list adapter
+        expListView.setAdapter(listAdapter);
+
+
+        Button clearButton = (Button) v.findViewById(R.id.clearButton);
+
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            SharedPreferences pref = getContext().getSharedPreferences("savedWorkoutLists", 0);
+            SharedPreferences.Editor editor = pref.edit();
+            Map<String,?> keys = pref.getAll();
+            @Override
+            public void onClick(View v) {
+                for(Map.Entry<String,?> entry : keys.entrySet()){
+                    Log.d("map values",entry.getKey() + ": " +
+                            entry.getValue().toString());
+                    editor.remove(entry.getKey());
+                }
+                editor.apply();
+            }
+        });
     }
 
     @Override
@@ -64,7 +109,8 @@ public class Tab2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab2, container, false);
+        v = inflater.inflate(R.layout.fragment_tab2, container, false);
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -91,18 +137,43 @@ public class Tab2 extends Fragment {
         mListener = null;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            // Refresh your fragment here
+            getFragmentManager().beginTransaction().detach(this).attach(this).commit();
+            Log.i("IsRefresh", "Yes");
+        }
+    }
+
+
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+
+    private void prepareListData() {
+        listDataHeader = new ArrayList<String>();
+        listDataChild = new HashMap<String, List<String>>();
+        SharedPreferences pref = getContext().getSharedPreferences("savedWorkoutLists", 0);
+        SharedPreferences.Editor editor = pref.edit();
+
+        Map<String,?> keys = pref.getAll();
+
+        for(Map.Entry<String,?> entry : keys.entrySet()){
+            Log.d("map values",entry.getKey() + ": " +
+                    entry.getValue().toString());
+            if(entry.getKey().contains("workout")){
+                listDataHeader.add(entry.getKey());
+                List<String> setList = new ArrayList<String>();
+
+                setList.addAll((Set)entry.getValue());
+
+                listDataChild.put(entry.getKey(), setList);
+            }
+
+        }
     }
 }

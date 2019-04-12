@@ -1,35 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Arms">
-        <item name="skull_crushers">Skull crushers</item>
+        <item name="skull_crushers">Skullcrushers</item>
         <item name="dips">Dips</item>
+        <item name="bicep_curl">BicepCurl</item>
+        <item name="bicep_chinups">Bicepchinup</item>
+        <item name="tricep_chinup">Tricepchinup</item>
+        <item name="tricep_extension">TricepExtension</item>
     </string-array>
 
 
     <string-array name="Chest">
-        <item name="bench_press">Bench press</item>
+        <item name="bench_press">BenchPress</item>
         <item name="pushup">Pushup</item>
+        <item name="onearm_pushup">OneArmPushup</item>
+        <item name="clapping_pushup">ClappingPushup</item>
+        <item name="chest_dip">ChestDip</item>
+        <item name="side_side_pushup">SideToSidePushup</item>
+        <item name="elevated_pushup">ElevatedPushup</item>
     </string-array>
 
     <string-array name="Shoulders">
-        <item name="shoulder_press">Shoulder press</item>
-        <item name="army_press">Army press</item>
+        <item name="shoulder_press">ShoulderPress</item>
+        <item name="army_press">Armypress</item>
+        <item name="rear_deltoid_raise">RearDeltoidRaise</item>
+        <item name="wall_handstand_pushup">WallHandstandPushup</item>
+        <item name="feet_elevated_pike_pushup">FeetElevatedPikePushup</item>
+        <item name="torso_elevated_pushup">TorsoElevatedPushup</item>
+        <item name="ywtl">YWTL</item>
     </string-array>
 
 
     <string-array name="Legs">
         <item name="squat">Squat</item>
         <item name="deadlift">Deadlift</item>
-        <item name="calf_raise">Calf raise</item>
+        <item name="calf_raise">CalfRaise</item>
+        <item name="dumbbell_lunge">DumbbellLunge</item>
+        <item name ="reverse_lunge">ReverseLunge</item>
+        <item name="walking_lunge">WalkingLunge</item>
+        <item name="barbell_hipthrust">BarbellHipThrust</item>
     </string-array>
 
 
     <string-array name="Back">
         <item name="row">Row</item>
+        <item name="side_side_pullup">SideToSidePullup</item>
+        <item name="inverted_row">InvertedRow</item>
+        <item name="scapular_shrug">ScapularShrug</item>
     </string-array>
 
     <string-array name="Core">
         <item name="crunch">Crunch</item>
+        <item name="superman">Superman</item>
+        <item name="seated_knee_up">SeatedKneeUp</item>
+        <item name="lying_straight_leg_raise">LyingStraightLegRaise</item>
+        <item name="situp">Situp</item>
+        <item name="front_plank">FrontPlank</item>
     </string-array>
+
+
 
 </resources>
