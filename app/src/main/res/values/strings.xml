@@ -44,10 +44,27 @@
     <string name="Squat_video">MVMNk0HiTMg</string>
     <string name="Deadlift_video">-4qRntuXBSc</string>
     <string name="CalfRaise_video">-M4-G8p8fmc</string>
+<<<<<<< Updated upstream
     <string name="DumbbellLunge_video">https://www.youtube.com/watch?v=D7KaRcUTQeE</string>
     <string name="ReverseLunge_video">https://www.youtube.com/watch?v=7pwO2gemRyg</string>
     <string name="WalkingLunge_video">https://www.youtube.com/watch?v=qLyj6xo3j5c</string>
     <string name="BarbellHipThrusts_video">https://www.youtube.com/watch?v=pUdIL5x0fWg</string>
+=======
+    
+
+
+    <string name="Dips_description">VYgVTinbx_A</string>
+    <string name="Skullcrushers_description">ir5PsbniVSc</string>
+    <string name="ShoulderPress_description">qEwKCR5JCog</string>
+    <string name="Armypress_description">tPDaHqvmT2g</string>
+    <string name="BenchPress_description">rT7DgCr-3pg</string>
+    <string name="Pushup_description">IODxDxX7oi4</string>
+    <string name="Crunch_descriptiono">JVwH-JsiwNI</string>
+    <string name="Row_description">QFq5jdwWwX4</string>
+    <string name="Squat_description">MVMNk0HiTMg</string>
+    <string name="Deadlift_description">-4qRntuXBSc</string>
+    <string name="CalfRaise_description">-M4-G8p8fmc</string>
+>>>>>>> Stashed changes
 
     <string name="player_error">Error initializing YouTube player: %s</string>
     <string name="seek_to">Jump To</string>
