@@ -2,6 +2,7 @@ package com.example.dynamicfitness;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -9,6 +10,8 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
+
+import org.w3c.dom.Text;
 
 public class YoutubePlayerVideo extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
@@ -28,7 +31,7 @@ public class YoutubePlayerVideo extends YouTubeBaseActivity implements YouTubePl
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
         Intent intent = getIntent();
         String exerciseName = intent.getStringExtra("exerciseName");
-        String videoName = exerciseName + "_"+"video";
+        String videoName = exerciseName + "_video";
         // Id of what you want
         int stringId = getResources().getIdentifier(videoName, "string", YoutubePlayerVideo.this.getPackageName());
         // Actually what you want
@@ -36,6 +39,16 @@ public class YoutubePlayerVideo extends YouTubeBaseActivity implements YouTubePl
         if (!wasRestored) {
             player.cueVideo(uTubeLink); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
         }
+
+        TextView exerciseLabel = (TextView) findViewById(R.id.exercisePageLabel);
+        exerciseLabel.setText(exerciseName);
+
+        String descriptionName = exerciseName + "_description";
+        int descriptionId = getResources().getIdentifier(descriptionName, "string", YoutubePlayerVideo.this.getPackageName());
+        String description = getResources().getString(descriptionId);
+
+        TextView exerciseDescription = (TextView) findViewById(R.id.exercisePageDescription);
+        exerciseDescription.setText(description);
     }
 
     @Override
