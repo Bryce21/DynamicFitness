@@ -17,6 +17,19 @@
     <string name="Deadlift_video">-4qRntuXBSc</string>
     <string name="CalfRaise_video">-M4-G8p8fmc</string>
 
+
+    <string name="Dips_description">VYgVTinbx_A</string>
+    <string name="Skullcrushers_description">ir5PsbniVSc</string>
+    <string name="ShoulderPress_description">qEwKCR5JCog</string>
+    <string name="Armypress_description">tPDaHqvmT2g</string>
+    <string name="BenchPress_description">rT7DgCr-3pg</string>
+    <string name="Pushup_description">IODxDxX7oi4</string>
+    <string name="Crunch_descriptiono">JVwH-JsiwNI</string>
+    <string name="Row_description">QFq5jdwWwX4</string>
+    <string name="Squat_description">MVMNk0HiTMg</string>
+    <string name="Deadlift_description">-4qRntuXBSc</string>
+    <string name="CalfRaise_description">-M4-G8p8fmc</string>
+
     <string name="player_error">Error initializing YouTube player: %s</string>
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
