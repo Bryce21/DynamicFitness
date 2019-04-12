@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +14,9 @@ public class BodyPartDescription extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_body_part_description);
+
+        Window window = this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.colorAccent));
 
         Intent mIntent = getIntent();
         int intValue = mIntent.getIntExtra("List Position", 0);
