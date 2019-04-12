@@ -115,9 +115,9 @@ public class Tab1 extends Fragment {
                                 SharedPreferences pref = getContext().getSharedPreferences("savedWorkoutLists", 0); // 0 - for private mode
                                 SharedPreferences.Editor editor = pref.edit();
                                 //Get current count of saved workouts. savedWorkoutsCount in preferences. 0 by default.
-                                int savedWorkoutsCount = pref.getInt("savedWorkoutCount", 0) ;
+                                int savedWorkoutsCount = pref.getInt("count", 0) ;
                                 // Update new workout count
-                                editor.putInt("savedWorkoutCount", ++savedWorkoutsCount);
+                                editor.putInt("count", ++savedWorkoutsCount);
 //                                Log.v("savedWorkoutCount", Integer.toString(savedWorkoutsCount));
                                 String workoutName = "workout_"+Integer.toString(savedWorkoutsCount);
 
@@ -132,20 +132,18 @@ public class Tab1 extends Fragment {
 
                                 editor.putStringSet(workoutName,trues);
                                 editor.apply();
-
-                                SharedPreferences pref2 = getContext().getSharedPreferences("savedWorkoutLists", 0); // 0 - for private mode
-                                Map<String,?> keys = pref.getAll();
-
-                                for(Map.Entry<String,?> entry : keys.entrySet()){
-                                    Log.d("map values",entry.getKey() + ": " +
-                                            entry.getValue().toString());
-                                }
                             }
                         })
                         // A null listener allows the button to dismiss the dialog and take no further action.
                         .setNegativeButton(android.R.string.no, null)
                         .show();
+                SharedPreferences pref = getContext().getSharedPreferences("savedWorkoutLists", 0);
+                Map<String,?> keys = pref.getAll();
 
+                for(Map.Entry<String,?> entry : keys.entrySet()){
+                    Log.d("map values",entry.getKey() + ": " +
+                            entry.getValue().toString());
+                }
             }
 
         });
