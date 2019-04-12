@@ -1,37 +1,143 @@
 <resources>
-    <string name="app_name">DynamicFitness</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="Dips_video">VYgVTinbx_A</string>
-    <string name="Skullcrushers_video">ir5PsbniVSc</string>
-    <string name="ShoulderPress_video">qEwKCR5JCog</string>
-    <string name="Armypress_video">tPDaHqvmT2g</string>
-    <string name="BenchPress_video">rT7DgCr-3pg</string>
-    <string name="Pushup_video">IODxDxX7oi4</string>
+    <!--Core start-->
+    <!--<item name="crunch">Crunch</item>-->
     <string name="Crunch_video">JVwH-JsiwNI</string>
+    <string name="Crunch_description">JVwH-JsiwNI</string>
+    <!--<item name="superman">Superman</item>-->
+    <string name="Superman_video">cc6UVRS7PW4</string>
+    <string name="Superman_description">cc6UVRS7PW4</string>
+    <!--<item name="seated_knee_up">SeatedKneeUp</item>-->
+    <string name="SeatedKneeUp_video">54q250IUEAc</string>
+    <string name="SeatedKneeUp_description">54q250IUEAc</string>
+    <!--<item name="lying_straight_leg_raise">LyingStraightLegRaise</item>-->
+    <string name="LyingStraightLegRaise_video">Zr-PtqcpeWM</string>
+    <string name="LyingStraightLegRaise_description">https://youtu.be/Zr-PtqcpeWM?t=8</string>
+    <!--<item name="situp">Situp</item>-->
+    <string name="Situp_video">1fbU_MkV7NE</string>
+    <string name="Situp_description">ASdvN_XEl_c</string>
+    <!--<item name="front_plank">FrontPlank</item>-->
+    <string name="FrontPlank_video">ASdvN_XEl_c</string>
+    <string name="FrontPlank_description">ASdvN_XEl_c</string>
+    <!--Core end-->
+
+
+    <!--Back start-->
+    <!--<item name="row">Row</item>-->
     <string name="Row_video">QFq5jdwWwX4</string>
-    <string name="Squat_video">MVMNk0HiTMg</string>
-    <string name="Deadlift_video">-4qRntuXBSc</string>
-    <string name="CalfRaise_video">-M4-G8p8fmc</string>
-
-
-    <string name="Dips_description">VYgVTinbx_A</string>
-    <string name="Skullcrushers_description">ir5PsbniVSc</string>
-    <string name="ShoulderPress_description">qEwKCR5JCog</string>
-    <string name="Armypress_description">tPDaHqvmT2g</string>
-    <string name="BenchPress_description">rT7DgCr-3pg</string>
-    <string name="Pushup_description">IODxDxX7oi4</string>
-    <string name="Crunch_descriptiono">JVwH-JsiwNI</string>
     <string name="Row_description">QFq5jdwWwX4</string>
+    <!--<item name="side_side_pullup">SideToSidePullup</item>-->
+    <string name="SideToSidePullup_video">QFq5jdwWwX4</string>
+    <string name="SideToSidePullup_description">QFq5jdwWwX4</string>
+    <!--<item name="inverted_row">InvertedRow</item>-->
+    <string name="InvertedRow_video">QFq5jdwWwX4</string>
+    <string name="InvertedRow_description">QFq5jdwWwX4</string>
+    <!--<item name="scapular_shrug">ScapularShrug</item>-->
+    <string name="ScapularShrug_video">QFq5jdwWwX4</string>
+    <string name="ScapularShrug_description">QFq5jdwWwX4</string>
+    <!--Back end-->
+
+
+    <!--Arm start-->
+    <!--<item name="skull_crushers">Skullcrushers</item>-->
+    <string name="Skullcrushers_video">ir5PsbniVSc</string>
+    <string name="Skullcrushers_description">ir5PsbniVSc</string>
+    <!--<item name="dips">Dips</item>-->
+    <string name="Dips_video">ir5PsbniVSc</string>
+    <string name="Dips_description">VYgVTinbx_A</string>
+    <!--<item name="bicep_curl">BicepCurl</item>-->
+    <string name="BicepCurl_video">QZEqB6wUPxQ</string>
+    <string name="BicepCurl_description">QZEqB6wUPxQ</string>
+    <!--<item name="bicep_chinups">Bicepchinup</item>-->
+    <string name="Bicepchinup_video">brhRXlOhsAM</string>
+    <string name="Bicepchinup_description">brhRXlOhsAM</string>
+    <!--<item name="tricep_chinup">Tricepchinup</item>-->
+    <string name="Tricepchinup_video">hfIQ5V4Tcgo</string>
+    <string name="Tricepchinup_description">hfIQ5V4Tcgo</string>
+    <!--<item name="tricep_extension">TricepExtension</item>-->
+    <string name="TricepExtension_video">VYgVTinbx_A</string>
+    <string name="TricepExtension_description">VYgVTinbx_A</string>
+    <!--Arm end-->
+
+
+    <!--Shoulders start-->
+    <!--<item name="shoulder_press">ShoulderPress</item>-->
+    <string name="ShoulderPress_video">qEwKCR5JCog</string>
+    <string name="ShoulderPress_description">qEwKCR5JCog</string>
+    <!--<item name="army_press">Armypress</item>-->
+    <string name="Armypress_video">tPDaHqvmT2g</string>
+    <string name="Armypress_description">tPDaHqvmT2g</string>
+    <!--<item name="rear_deltoid_raise">RearDeltoidRaise</item>-->
+    <string name="RearDeltoidRaise_video">p1yQnTNE808</string>
+    <string name="RearDeltoidRaise_description">p1yQnTNE808</string>
+    <!--<item name="wall_handstand_pushup">WallHandstandPushup</item>-->
+    <string name="WallHandstandPushup_video">dupP2OgUJIQ</string>
+    <string name="WallHandstandPushup_description">dupP2OgUJIQ</string>
+    <!--<item name="feet_elevated_pike_pushup">FeetElevatedPikePushup</item>-->
+    <string name="FeetElevatedPikePushup_video">VnQU_lLBFW0</string>
+    <string name="FeetElevatedPikePushup_description">VnQU_lLBFW0</string>
+    <!--<item name="torso_elevated_pushup">TorsoElevatedPushup</item>-->
+    <string name="TorsoElevatedPushup_video">2MR9Eg7jnVg</string>
+    <string name="TorsoElevatedPushup_description">2MR9Eg7jnVg</string>
+    <!--<item name="ywtl">YWTL</item>-->
+    <string name="YWTL_video">zZJwUSHo5Ak</string>
+    <string name="YWTL_description">zZJwUSHo5Ak</string>
+    <!--Shoulders end-->
+
+    <!--Legs start-->
+    <!--<item name="squat">Squat</item>-->
+    <string name="Squat_video">MVMNk0HiTMg</string>
     <string name="Squat_description">MVMNk0HiTMg</string>
+    <!--<item name="deadlift">Deadlift</item>-->
+    <string name="Deadlift_video">-4qRntuXBSc</string>
     <string name="Deadlift_description">-4qRntuXBSc</string>
+    <!--<item name="calf_raise">CalfRaise</item>-->
+    <string name="CalfRaise_video">-M4-G8p8fmc</string>
     <string name="CalfRaise_description">-M4-G8p8fmc</string>
+    <!--<item name="dumbbell_lunge">DumbbellLunge</item>-->
+    <string name="DumbbellLunge_video">D7KaRcUTQeE</string>
+    <string name="DumbbellLunge_description">D7KaRcUTQeE</string>
+    <!--<item name ="reverse_lunge">ReverseLunge</item>-->
+    <string name="ReverseLunge_video">7pwO2gemRyg</string>
+    <string name="ReverseLunge_description">7pwO2gemRyg</string>
+    <!--<item name="walking_lunge">WalkingLunge</item>-->
+    <string name="WalkingLunge_video">qLyj6xo3j5c</string>
+    <string name="WalkingLunge_description">qLyj6xo3j5c</string>
+    <!--<item name="barbell_hipthrust">BarbellHipThrust</item>-->
+    <string name="BarbellHipThrust_video">pUdIL5x0fWg</string>
+    <string name="BarbellHipThrust_description">pUdIL5x0fWg</string>
+    <!--Legs end-->
+
+
+    <!--Chest start-->
+    <!--<item name="bench_press">BenchPress</item>-->
+    <string name="BenchPress_video">rT7DgCr-3pg</string>
+    <string name="BenchPress_description">rT7DgCr-3pg</string>
+    <!--<item name="pushup">Pushup</item>-->
+    <string name="Pushup_video">IODxDxX7oi4</string>
+    <string name="Pushup_description">IODxDxX7oi4</string>
+    <!--<item name="onearm_pushup">OneArmPushup</item>-->
+    <string name="OneArmPushup_video">5nS74CaNm8M</string>
+    <string name="OneArmPushup_description">5nS74CaNm8M</string>
+    <!--<item name="clapping_pushup">ClappngPushup</item>-->
+    <string name="ClappingPushup_video">EYwWCgM198U</string>
+    <string name="ClappingPushup_description">EYwWCgM198U</string>
+    <!--<item name="chest_dip">ChestDip</item>-->
+    <string name="ChestDip_video">BjiyWC_cJW0</string>
+    <string name="ChestDip_description">BjiyWC_cJW0</string>
+    <!--<item name="side_side_pushup">SideToSidePushup</item>-->
+    <string name="SideToSidePushup_video">Ro1YZsjJqNE</string>
+    <string name="SideToSidePushup_description">https://youtu.be/Ro1YZsjJqNE?t=5</string>
+    <!--<item name="elevated_pushup">ElevatedPushup</item>-->
+    <string name="ElevatedPushup_video">VTE730D0VIk</string>
+    <string name="ElevatedPushup_description">https://youtu.be/VTE730D0VIk?t=49</string>
+    <!--Chest end-->
+
 
     <string name="player_error">Error initializing YouTube player: %s</string>
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
+    <string name="app_name">DynamicFitness</string>
 
 </resources>
