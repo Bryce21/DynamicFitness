@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".exerciseDescription">
 
-    <TextView
-        android:id="@+id/exerciseDescription"
+    <WebView
+        android:id="@+id/WebView01"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"></WebView>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Arms">
-        <item name="skull_crushers">Skull crushers</item>
+        <item name="skull_crushers">Skullcrushers</item>
         <item name="dips">Dips</item>
     </string-array>
 
 
     <string-array name="Chest">
-        <item name="bench_press">Bench press</item>
+        <item name="bench_press">BenchPress</item>
         <item name="pushup">Pushup</item>
     </string-array>
 
     <string-array name="Shoulders">
-        <item name="shoulder_press">Shoulder press</item>
-        <item name="army_press">Army press</item>
+        <item name="shoulder_press">ShoulderPress</item>
+        <item name="army_press">Armypress</item>
     </string-array>
 
 
     <string-array name="Legs">
         <item name="squat">Squat</item>
         <item name="deadlift">Deadlift</item>
-        <item name="calf_raise">Calf raise</item>
+        <item name="calf_raise">CalfRaise</item>
     </string-array>
 
 
@@ -31,5 +31,7 @@
     <string-array name="Core">
         <item name="crunch">Crunch</item>
     </string-array>
+
+
 
 </resources>
