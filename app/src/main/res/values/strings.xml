@@ -5,52 +5,33 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="Dips_video">https://www.youtube.com/watch?v=VYgVTinbx_A</string>
-    <string name="Skullcrushers_video">https://www.youtube.com/watch?v=ir5PsbniVSc</string>
-    <string name="BicepCurl_video">https://www.youtube.com/watch?v=QZEqB6wUPxQ</string>
-    <string name="Bicepchinup_video">https://www.youtube.com/watch?v=brhRXlOhsAM</string>
-    <string name="Tricepchinup_video">https://www.youtube.com/watch?v=hfIQ5V4Tcgo</string>
-    <string name="TricepExtension">https://www.youtube.com/watch?v=VYgVTinbx_A</string>
-
-    <string name="ShoulderPress_video">https://www.youtube.com/watch?v=qEwKCR5JCog</string>
-    <string name="Armypress_video">https://www.youtube.com/watch?v=tPDaHqvmT2g</string>
-    <string name="PushBack_video">https://youtu.be/X82vQoG930c?t=107</string>
-    <string name="RearDeltoidRaise_video">https://www.youtube.com/watch?v=p1yQnTNE808</string>
-    <string name="WallHandstandPushup_video">https://youtu.be/dupP2OgUJIQ?t=27</string>
-    <string name="FeetElevatedPikePushup_video">https://www.youtube.com/watch?v=VnQU_lLBFW0</string>
-    <string name="TorsoElevatedPushup_video">https://www.youtube.com/watch?v=2MR9Eg7jnVg</string>
-    <string name="YWTL_video">https://www.youtube.com/watch?v=zZJwUSHo5Ak</string>
-
-    <string name="BenchPress_video">https://www.youtube.com/watch?v=rT7DgCr-3pg</string>
-    <string name="Pushup_video">https://www.youtube.com/watch?v=IODxDxX7oi4</string>
-    <string name="OneArmPushup_video">https://www.youtube.com/watch?v=5nS74CaNm8M</string>
-    <string name="ClappingPushup_video">https://www.youtube.com/watch?v=EYwWCgM198U</string>
-    <string name="ChestDip_video">https://www.youtube.com/watch?v=BjiyWC_cJW0</string>
-    <string name="SideToSidePushup_video">https://youtu.be/Ro1YZsjJqNE?t=5</string>
-    <string name="ElevatedPushup_video">https://youtu.be/VTE730D0VIk?t=49</string>
-
-    <string name="Crunch_video">https://www.youtube.com/watch?v=JVwH-JsiwNI</string>
-    <string name="Superman_video">https://www.youtube.com/watch?v=cc6UVRS7PW4</string>
-    <string name="SeatedKneeUp_video">https://www.youtube.com/watch?v=54q250IUEAc</string>
-    <string name="LyingStraightLegRaise_video">https://youtu.be/Zr-PtqcpeWM?t=8</string>
-    <string name="Situp_video">https://www.youtube.com/watch?v=1fbU_MkV7NE</string>
-    <string name="FrontPlank_video">https://www.youtube.com/watch?v=ASdvN_XEl_c</string>
-
-    <string name="Row_video">https://www.youtube.com/watch?v=QFq5jdwWwX4</string>
-    <string name="SideToSidePullup_video"></string>
-    <string name="InvertedRow_video"></string>
-    <string name="ScapularShrug_video"></string>
+    <string name="Dips_video">VYgVTinbx_A</string>
+    <string name="Skullcrushers_video">ir5PsbniVSc</string>
+    <string name="ShoulderPress_video">qEwKCR5JCog</string>
+    <string name="Armypress_video">tPDaHqvmT2g</string>
+    <string name="BenchPress_video">rT7DgCr-3pg</string>
+    <string name="Pushup_video">IODxDxX7oi4</string>
+    <string name="Crunch_video">JVwH-JsiwNI</string>
+    <string name="Row_video">QFq5jdwWwX4</string>
+    <string name="Squat_video">MVMNk0HiTMg</string>
+    <string name="Deadlift_video">-4qRntuXBSc</string>
+    <string name="CalfRaise_video">-M4-G8p8fmc</string>
 
 
-    <string name="Squat_video">https://www.youtube.com/watch?v=MVMNk0HiTMg</string>
-    <string name="Deadlift_video">https://www.youtube.com/watch?v=-4qRntuXBSc</string>
-    <string name="CalfRaise_video">https://www.youtube.com/watch?v=-M4-G8p8fmc</string>
-    <string name="DumbbellLunge_video">https://www.youtube.com/watch?v=D7KaRcUTQeE</string>
-    <string name="ReverseLunge_video">https://www.youtube.com/watch?v=7pwO2gemRyg</string>
-    <string name="WalkingLunge_video">https://www.youtube.com/watch?v=qLyj6xo3j5c</string>
-    <string name="BarbellHipThrusts_video">https://www.youtube.com/watch?v=pUdIL5x0fWg</string>
+    <string name="Dips_description">VYgVTinbx_A</string>
+    <string name="Skullcrushers_description">ir5PsbniVSc</string>
+    <string name="ShoulderPress_description">qEwKCR5JCog</string>
+    <string name="Armypress_description">tPDaHqvmT2g</string>
+    <string name="BenchPress_description">rT7DgCr-3pg</string>
+    <string name="Pushup_description">IODxDxX7oi4</string>
+    <string name="Crunch_descriptiono">JVwH-JsiwNI</string>
+    <string name="Row_description">QFq5jdwWwX4</string>
+    <string name="Squat_description">MVMNk0HiTMg</string>
+    <string name="Deadlift_description">-4qRntuXBSc</string>
+    <string name="CalfRaise_description">-M4-G8p8fmc</string>
 
-
-    
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
 
 </resources>
