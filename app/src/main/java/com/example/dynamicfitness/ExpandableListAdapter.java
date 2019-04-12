@@ -61,7 +61,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             @Override
             public void onClick(View v) {
                 Log.v("myLog onClick", item.exerciseName);
-                Intent intent = new Intent(_context, exerciseDescription.class);
+                Intent intent = new Intent(_context, YoutubePlayerVideo.class);
                 intent.putExtra("exerciseName", item.exerciseName);
                 _context.startActivity(intent);
             }
