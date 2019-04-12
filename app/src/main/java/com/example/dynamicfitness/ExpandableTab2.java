@@ -61,7 +61,7 @@ public class ExpandableTab2 extends BaseExpandableListAdapter {
             @Override
             public void onClick(View v) {
                 Log.v("myLog onClick", item);
-                Intent intent = new Intent(_context, exerciseDescription.class);
+                Intent intent = new Intent(_context, YoutubePlayerVideo.class);
                 intent.putExtra("exerciseName", item);
                 _context.startActivity(intent);
             }
