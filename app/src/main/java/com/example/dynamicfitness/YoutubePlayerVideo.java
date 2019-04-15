@@ -2,6 +2,7 @@ package com.example.dynamicfitness;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,9 @@ public class YoutubePlayerVideo extends YouTubeBaseActivity implements YouTubePl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube_player_video);
+
+        Window window = this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.colorAccent));
 
         youTubeView = (com.google.android.youtube.player.YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
