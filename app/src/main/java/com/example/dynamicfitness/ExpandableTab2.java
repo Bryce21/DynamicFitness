@@ -60,7 +60,6 @@ public class ExpandableTab2 extends BaseExpandableListAdapter {
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("myLog onClick", item);
                 Intent intent = new Intent(_context, YoutubePlayerVideo.class);
                 intent.putExtra("exerciseName", item);
                 _context.startActivity(intent);
@@ -97,6 +96,7 @@ public class ExpandableTab2 extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
         String headerTitle = (String) getGroup(groupPosition);
+        headerTitle = headerTitle.replace("_workout", "");
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
