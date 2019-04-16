@@ -39,8 +39,6 @@ public class exerciseDescription extends AppCompatActivity {
 
         webView.loadUrl(uTubeLink);
 
-        TextView textView = (TextView) findViewById(R.id.desc);
-        textView.setText("Text");
 
     }
 }

@@ -4,134 +4,235 @@
     <!--Core start-->
     <!--<item name="crunch">Crunch</item>-->
     <string name="Crunch_video">JVwH-JsiwNI</string>
-    <string name="Crunch_description">JVwH-JsiwNI</string>
+    <string name="Crunch_description">\tA crunch begins with lying face up on the floor with knees bent and feet planted on the ground. The movement begins by curling the shoulders towards the pelvis. The hands can be behind or beside the neck or crossed over the chest.</string>
     <!--<item name="superman">Superman</item>-->
     <string name="Superman_video">cc6UVRS7PW4</string>
-    <string name="Superman_description">cc6UVRS7PW4</string>
+    <string name="Superman_description">\tTo begin, lie straight and face down on the floor or exercise mat. Your arms should be fully extended in front of you. This is the starting position.
+Simultaneously raise your arms, legs, and chest off of the floor and hold this contraction for 2 seconds. Tip: Squeeze your lower back to get the best results from this exercise. Remember to exhale during this movement. Note: When holding the contracted position, you should look like superman when he is flying.
+Slowly begin to lower your arms, legs and chest back down to the starting position while inhaling.
+Repeat for the recommended amount of repetitions prescribed in your program.</string>
     <!--<item name="seated_knee_up">SeatedKneeUp</item>-->
     <string name="SeatedKneeUp_video">54q250IUEAc</string>
-    <string name="SeatedKneeUp_description">54q250IUEAc</string>
+    <string name="SeatedKneeUp_description">\tSit on the edge of a bench with your legs extended in front of you.
+Grasp the edge of the bench for support.
+Lean backward and raise your legs a little off the floor, keeping them straight and together.Exhale as you lean forward and raise your knees toward your chest.
+Inhale as you lean backward and return your legs to the starting position.
+Repeat.</string>
     <!--<item name="lying_straight_leg_raise">LyingStraightLegRaise</item>-->
     <string name="LyingStraightLegRaise_video">Zr-PtqcpeWM</string>
-    <string name="LyingStraightLegRaise_description">https://youtu.be/Zr-PtqcpeWM?t=8</string>
+    <string name="LyingStraightLegRaise_description">\tLay on your back with your with your arms at your sides and your legs straight out in front of you. ... Slowly raise one leg from the hip as high as you can comfortably get it. Try to avoid an excessive arch in your back as you lift your leg by keeping your abdominal muscles engaged. Hold and count to five.</string>
     <!--<item name="situp">Situp</item>-->
     <string name="Situp_video">1fbU_MkV7NE</string>
-    <string name="Situp_description">ASdvN_XEl_c</string>
+    <string name="Situp_description">\tLie down on your back.
+Bend your legs and place feet firmly on the ground to stabilize your lower body.
+Cross your hands to opposite shoulders or place them behind your ears, without pulling on your neck.
+Curl your upper body all the way up toward your knees. Exhale as you lift.
+Slowly, lower yourself down, returning to your starting point. Inhale as you lower.</string>
     <!--<item name="front_plank">FrontPlank</item>-->
     <string name="FrontPlank_video">ASdvN_XEl_c</string>
-    <string name="FrontPlank_description">ASdvN_XEl_c</string>
+    <string name="FrontPlank_description">\tLie down on your back.
+Bend your legs and place feet firmly on the ground to stabilize your lower body.
+Cross your hands to opposite shoulders or place them behind your ears, without pulling on your neck.
+Curl your upper body all the way up toward your knees. Exhale as you lift.
+Slowly, lower yourself down, returning to your starting point. Inhale as you lower.Upward Phase. Slowly lift your entire torso off the floor or mat, maintaining a stiff torso and legs. Avoid any arching (sagging) in your low back, hiking (upwards) in your hips or bending in the knees. Avoid shrugging your shoulder and keep your shoulders positioned directly over your elbows with your palms facing down. Continue to breath while holding this position for a specified time (5+ seconds)Downward Phase: While maintaining a stiff torso and extended knees, gently lower your body back towards the mat or floor before relaxing.
+If you experience any pain in the low back with this movement, stop the exercise immediately and consult with your doctor.</string>
     <!--Core end-->
 
 
     <!--Back start-->
     <!--<item name="row">Row</item>-->
     <string name="Row_video">QFq5jdwWwX4</string>
-    <string name="Row_description">QFq5jdwWwX4</string>
+    <string name="Row_description">\tSit upright on the bench, facing the low pulley row machine with a V-bar.
+Keep your feet up on the front platform, making sure your knees are slightly bent but not locked.
+Lean over, keeping the natural alignment of your back, and grab the V-bar.
+Keep your arms extended and pull back your torso so that it is at a right angle with your legs. Keep your lower back slightly arched, chest out, and shoulders relaxed. This is the starting position.
+Keeping your torso stationary, pull the handles of the V-bar back. Breathe out, keep your arms close to your body, and pull the V-bar until your thumbs touch your abs. Squeeze your back muscles.
+Hold this pose for a second. Slowly release the contraction and go back to the starting position.</string>
     <!--<item name="side_side_pullup">SideToSidePullup</item>-->
     <string name="SideToSidePullup_video">QFq5jdwWwX4</string>
-    <string name="SideToSidePullup_description">QFq5jdwWwX4</string>
+    <string name="SideToSidePullup_description">\tUsing a wide, overhand grip, pull your body up (high enough so your upper chest is in line with the bar), then bring your body to your right hand as you extend your left arm straight out to the side. Repeat this to your left side, extending your right arm straight out to the side, then drop back down.</string>
     <!--<item name="inverted_row">InvertedRow</item>-->
     <string name="InvertedRow_video">QFq5jdwWwX4</string>
-    <string name="InvertedRow_description">QFq5jdwWwX4</string>
+    <string name="InvertedRow_description">\tPosition a bar in a rack to about waist height. You can also use a smith machine.
+Take a wider than shoulder width grip on the bar and position yourself hanging underneath the bar. Your body should be straight with your heels on the ground with your arms fully extended. This will be your starting position.
+Begin by flexing the elbow, pulling your chest towards the bar. Retract your shoulder blades as you perform the movement.
+Pause at the top of the motion, and return yourself to the start position.
+Repeat for the desired number of repetitions.</string>
     <!--<item name="scapular_shrug">ScapularShrug</item>-->
     <string name="ScapularShrug_video">QFq5jdwWwX4</string>
-    <string name="ScapularShrug_description">QFq5jdwWwX4</string>
+    <string name="ScapularShrug_description">\tKneel or position yourself into a plank.
+Make sure that you always keep your elbows straight.
+The movement is only happening between your shoulder blades.
+Pinch the scapulae strongly together on the bottom of the movement and hold for 1 second. This is called retraction.
+Push the scapulae and spread them apart fully on the top of the movement. Hold 1 second. This is called protraction.</string>
     <!--Back end-->
 
 
     <!--Arm start-->
     <!--<item name="skull_crushers">Skullcrushers</item>-->
     <string name="Skullcrushers_video">ir5PsbniVSc</string>
-    <string name="Skullcrushers_description">ir5PsbniVSc</string>
+    <string name="Skullcrushers_description">\tUsing a close grip, lift the EZ bar and hold it with your elbows in as you lie on the bench. Your arms should be perpendicular to the floor. This will be your starting position.
+Keeping the upper arms stationary, lower the bar by allowing the elbows to flex. Inhale as you perform this portion of the movement. Pause once the bar is directly above the forehead.
+Lift the bar back to the starting position by extending the elbow and exhaling.
+Repeat.</string>
     <!--<item name="dips">Dips</item>-->
     <string name="Dips_video">ir5PsbniVSc</string>
-    <string name="Dips_description">VYgVTinbx_A</string>
+    <string name="Dips_description">\tGrab the parallel bars and jump up, straighten your arms
+Lower your body by bending your arms while leaning forward
+Dip down until your shoulders are below your elbows
+Lift your body up by straightening your arms
+Lock your elbows at the top</string>
     <!--<item name="bicep_curl">BicepCurl</item>-->
     <string name="BicepCurl_video">QZEqB6wUPxQ</string>
-    <string name="BicepCurl_description">QZEqB6wUPxQ</string>
+    <string name="BicepCurl_description">\tStand up straight with a dumbbell in each hand at arms length. Keep your elbows close to your torso and rotate the palms of your hands until they are facing forward. This will be your starting position. Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps.</string>
     <!--<item name="bicep_chinups">Bicepchinup</item>-->
     <string name="Bicepchinup_video">brhRXlOhsAM</string>
-    <string name="Bicepchinup_description">brhRXlOhsAM</string>
+    <string name="Bicepchinup_description">\tGrab the pullup bar with your palms down (shoulder-width grip)
+Hang to the pullup-bar with straight arms and your legs off the floor
+Pull yourself up by pulling your elbows down to the floor
+Go all the way up until your chin passes the be bar
+Lower yourself until your arms are straight</string>
     <!--<item name="tricep_chinup">Tricepchinup</item>-->
     <string name="Tricepchinup_video">hfIQ5V4Tcgo</string>
-    <string name="Tricepchinup_description">hfIQ5V4Tcgo</string>
+    <string name="Tricepchinup_description">\tFlex your biceps and lats to pull yourself up until your chin is level with the bar. Keep your elbows close to your body and hold at the top for 5-10sec. As well as your biceps and lats, this move calls on your triceps, for a full arm workout. Hold the bar with your palms facing you.</string>
     <!--<item name="tricep_extension">TricepExtension</item>-->
     <string name="TricepExtension_video">VYgVTinbx_A</string>
-    <string name="TricepExtension_description">VYgVTinbx_A</string>
+    <string name="TricepExtension_description">\tTo begin, stand up with a dumbbell held by both hands. Your feet should be about shoulder width apart from each other. Slowly use both hands to grab the dumbbell and lift it over your head until both arms are fully extended. The resistance should be resting in the palms of your hands with your thumbs around it.</string>
     <!--Arm end-->
 
 
     <!--Shoulders start-->
     <!--<item name="shoulder_press">ShoulderPress</item>-->
     <string name="ShoulderPress_video">qEwKCR5JCog</string>
-    <string name="ShoulderPress_description">qEwKCR5JCog</string>
+    <string name="ShoulderPress_description">\tHold a dumbbell in each hand and sit on a bench with back support.
+Plant your feet firmly on the floor about hip-width apart.
+Bend your elbows and raise your upper arms to shoulder height so the dumbbells are at ear level.
+Pull your abdominals in so there is a slight gap between the small of your back and the bench.
+Place the back of your head against the pad.
+Push the dumbbells up and in until the ends of the dumbbells touch lightly, directly over your head, and then lower the dumbbells back to ear level.</string>
     <!--<item name="army_press">Armypress</item>-->
     <string name="Armypress_video">tPDaHqvmT2g</string>
-    <string name="Armypress_description">tPDaHqvmT2g</string>
+    <string name="Armypress_description">\tStart by placing a barbell that is about chest high on a squat rack. Once you have selected the weights, grab the barbell using a pronated (palms facing forward) grip. Make sure to grip the bar wider than shoulder width apart from each other.
+Slightly bend the knees and place the barbell on your collar bone. Lift the barbell up keeping it lying on your chest. Take a step back and position your feet shoulder width apart from each other.
+Once you pick up the barbell with the correct grip length, lift the bar up over your head by locking your arms. Hold at about shoulder level and slightly in front of your head. This is your starting position.
+Lower the bar down to the collarbone slowly as you inhale.
+Lift the bar back up to the starting position as you exhale.
+Repeat for the recommended amount of repetitions.</string>
     <!--<item name="rear_deltoid_raise">RearDeltoidRaise</item>-->
     <string name="RearDeltoidRaise_video">p1yQnTNE808</string>
-    <string name="RearDeltoidRaise_description">p1yQnTNE808</string>
+    <string name="RearDeltoidRaise_description">\tPlace a couple of dumbbells looking forward in front of a flat bench.
+Sit on the end of the bench with your legs together and the dumbbells behind your calves.
+Bend at the waist while keeping the back straight in order to pick up the dumbbells. The palms of your hands should be facing each other as you pick them. This will be your starting position.
+Keeping your torso forward and stationary, and the arms slightly bent at the elbows, lift the dumbbells straight to the side until both arms are parallel to the floor. Exhale as you lift the weights. (Note: avoid swinging the torso or bringing the arms back as opposed to the side.)
+After a one second contraction at the top, slowly lower the dumbbells back to the starting position.
+Repeat for the recommended amount of repetitions.</string>
     <!--<item name="wall_handstand_pushup">WallHandstandPushup</item>-->
     <string name="WallHandstandPushup_video">dupP2OgUJIQ</string>
-    <string name="WallHandstandPushup_description">dupP2OgUJIQ</string>
+    <string name="WallHandstandPushup_description">\tFeet: Feet are together. If at the WHSPU steps (Bending WHSPU to Elevated WHSPU), your feet don’t have to be together. This makes the exercise more difficult since there is less tension in your body. Dead weight is harder to move than taut weight.
+Arms: Form a straight line into the floor when extended.
+Fingers: Spread or together. Middle finger should be in line with your elbows.
+Head: In line with your spine for stability. Try not to tilt your head up or down too much. During the movement, it should move in line with your arms.
+Breath: Inhale at the top position. Hold your breath or inhale as you descend. Hold at the bottom position. Hold as you push up. Exhale at the top.
+This breathing technique allows you to produce more power. The extra pressure in your core keeps your abs and lower back safer and stronger. If doing more than 12 reps a set, you may find inhaling on descent and exhaling on push is more effective.</string>
     <!--<item name="feet_elevated_pike_pushup">FeetElevatedPikePushup</item>-->
     <string name="FeetElevatedPikePushup_video">VnQU_lLBFW0</string>
-    <string name="FeetElevatedPikePushup_description">VnQU_lLBFW0</string>
+    <string name="FeetElevatedPikePushup_description">\tGet into the pike position with your feet elevated on a chair or bench
+Lower your head towards the floor by bending your elbows
+Push through your hands and return to the starting pike position
+Repeat</string>
     <!--<item name="torso_elevated_pushup">TorsoElevatedPushup</item>-->
     <string name="TorsoElevatedPushup_video">2MR9Eg7jnVg</string>
-    <string name="TorsoElevatedPushup_description">2MR9Eg7jnVg</string>
+    <string name="TorsoElevatedPushup_description">\tPlace your hands on an elevated surface—such a box or bench—with your arms straight and your hands directly below your shoulders. Walk your legs out behind you until you are in a pushup position. ... Lower your body until your chest nearly touches the box of bench.</string>
     <!--<item name="ywtl">YWTL</item>-->
     <string name="YWTL_video">zZJwUSHo5Ak</string>
-    <string name="YWTL_description">zZJwUSHo5Ak</string>
+    <string name="YWTL_description">\tStand with your feet shoulder-width apart and bend your knees into a half squat. Scoop in your belly button to keep your back flat and really engage your core. Lifting from the back of your shoulders, raise your arms out at 45-degree angle from your body so they form a "Y." Lower and repeat for a total of 8 reps. Then raise your arms directly out to the sides so that they form a "T;" do 8 reps. Then bend your arms at the elbows and hinge your forearms down so that they form a "W;" do 8 reps. Finish by bending your arms at the elbows to form an "L" and extend them straight overhead for 8 reps.</string>
     <!--Shoulders end-->
 
     <!--Legs start-->
     <!--<item name="squat">Squat</item>-->
     <string name="Squat_video">MVMNk0HiTMg</string>
-    <string name="Squat_description">MVMNk0HiTMg</string>
+    <string name="Squat_description">\tStand with your head facing forward and your chest held up and out.
+Place your feet shoulder-width apart or slightly wider. Extend your hands straight out in front of you to help keep your balance. You can also bend the elbows or clasp the fingers.
+Sit back and down like you are sitting into an imaginary chair. Keep your head facing forward as your upper body bends forward a bit. Rather than allowing your back to round, let your lower back arch slightly as you descend.
+Lower down so your thighs are as parallel to the floor as possible, with your knees over your ankles. Press your weight back into your heels.
+Keep your body tight, and push through your heels to bring yourself back to the starting position.</string>
     <!--<item name="deadlift">Deadlift</item>-->
     <string name="Deadlift_video">-4qRntuXBSc</string>
-    <string name="Deadlift_description">-4qRntuXBSc</string>
+    <string name="Deadlift_description">\tStand with your mid-foot under the barbell
+Bend over and grab the bar with a shoulder-width grip
+Bend your knees until your shins touch the bar
+Lift your chest up and straighten your lower back
+Take a big breath, hold it, and stand up with the weight
+Hold the weight for a second at the top, with locked hips and knees. Then return the weight to the floor by moving your hips back while bending your legs. Rest a second at the bottom and repeat.</string>
     <!--<item name="calf_raise">CalfRaise</item>-->
     <string name="CalfRaise_video">-M4-G8p8fmc</string>
-    <string name="CalfRaise_description">-M4-G8p8fmc</string>
+    <string name="CalfRaise_description">\tRest your hands against a wall or a sturdy object for balance. Raise your heels a few inches above the edge of the step so that you are on your tiptoes. Hold the position for a moment, and then lower your heels below the platform, feeling a stretch in your calf muscles. The standing calf raise works your calf muscles.</string>
     <!--<item name="dumbbell_lunge">DumbbellLunge</item>-->
     <string name="DumbbellLunge_video">D7KaRcUTQeE</string>
-    <string name="DumbbellLunge_description">D7KaRcUTQeE</string>
+    <string name="DumbbellLunge_description">\tStand with your torso upright holding two dumbbells in your hands by your sides. This will be your starting position.
+Step forward with your right leg around 2 feet or so from the foot being left stationary behind and lower your upper body down, while keeping the torso upright and maintaining balance. Inhale as you go down. Note: As in the other exercises, do not allow your knee to go forward beyond your toes as you come down, as this will put undue stress on the knee joint. Make sure that you keep your front shin perpendicular to the ground.
+Using mainly the heel of your foot, push up and go back to the starting position as you exhale.
+Repeat the movement for the recommended amount of repetitions and then perform with the left leg.</string>
     <!--<item name ="reverse_lunge">ReverseLunge</item>-->
     <string name="ReverseLunge_video">7pwO2gemRyg</string>
-    <string name="ReverseLunge_description">7pwO2gemRyg</string>
+    <string name="ReverseLunge_description">\tStand upright, with your hands at your hips.Take a large step backward with your left foot.
+        Lower your hips so that your right thigh (front leg) becomes parallel to the floor with your right knee positioned directly over your ankle. Your left knee should be bent at a 90-degree angle and pointing toward the floor with your left heel lifted.
+        Return to standing by pressing your right heel into the floor and bringing your left leg forward to complete one rep.
+        Alternate legs, and step back with right leg.</string>
     <!--<item name="walking_lunge">WalkingLunge</item>-->
     <string name="WalkingLunge_video">qLyj6xo3j5c</string>
-    <string name="WalkingLunge_description">qLyj6xo3j5c</string>
+    <string name="WalkingLunge_description">\tStand upright, feet together, and take a controlled step forward with your right leg, lowering your hips toward the floor by bending both knees to 90-degree angles. The back knee should point toward but not touch the ground, and your front knee should be directly over the ankle.</string>
     <!--<item name="barbell_hipthrust">BarbellHipThrust</item>-->
     <string name="BarbellHipThrust_video">pUdIL5x0fWg</string>
-    <string name="BarbellHipThrust_description">pUdIL5x0fWg</string>
+    <string name="BarbellHipThrust_description">\tBegin seated on the ground with a bench directly behind you. Have a loaded barbell over your legs. Using a fat bar or having a pad on the bar can greatly reduce the discomfort caused by this exercise.
+Roll the bar so that it is directly above your hips, and lean back against the bench so that your shoulder blades are near the top of it.
+Begin the movement by driving through your feet, extending your hips vertically through the bar. Your weight should be supported by your shoulder blades and your feet. Extend as far as possible, then reverse the motion to return to the starting position.</string>
     <!--Legs end-->
 
 
     <!--Chest start-->
     <!--<item name="bench_press">BenchPress</item>-->
     <string name="BenchPress_video">rT7DgCr-3pg</string>
-    <string name="BenchPress_description">rT7DgCr-3pg</string>
+    <string name="BenchPress_description">\tLie on the bench with your eyes under the bar
+Grab the bar with a medium grip-width (thumbs around the bar!)
+Unrack the bar by straightening your arms
+Lower the bar to your mid-chest
+Press the bar back up until your arms are straight
+Hold the weight for a second at the top, with straight arms. Breathe. Then take a big breath, hold it, and lower the bar again. Keep your butt on the bench when you press it back up.</string>
     <!--<item name="pushup">Pushup</item>-->
     <string name="Pushup_video">IODxDxX7oi4</string>
-    <string name="Pushup_description">IODxDxX7oi4</string>
+    <string name="Pushup_description">\tstart by positioning yourself on the floor with your face down, your palms on the floor shoulder-width apart, and the balls of your feet touching the ground. When you are ready to start, push yourself up, keeping your body in a straight line and your elbows pointed to your toes.</string>
     <!--<item name="onearm_pushup">OneArmPushup</item>-->
     <string name="OneArmPushup_video">5nS74CaNm8M</string>
-    <string name="OneArmPushup_description">5nS74CaNm8M</string>
+    <string name="OneArmPushup_description">\tUse a bench, step, table, or wall, so that your pushup is done on an incline (this makes it a lot easier). Get into pushup position with one hand on the surface and spread your feet wide apart. Tense your entire body and hold your free hand tight against your lower back [1]. Lower your body slowly until your chest nearly touches, then explode up to the starting position [2]. That’s one rep.</string>
     <!--<item name="clapping_pushup">ClappngPushup</item>-->
     <string name="ClappingPushup_video">EYwWCgM198U</string>
-    <string name="ClappingPushup_description">EYwWCgM198U</string>
+    <string name="ClappingPushup_description">\tStart in a plank position with your arms and legs straight, shoulders above the wrists, core engaged.
+Take a breath in, and as you exhale, slowly bend your elbows, lowering your entire body to the floor.
+Push through your palms to create enough momentum to lift your hands off the ground. With your hands close to your chest, perform a clap before returning back to the ground. Be sure to bring your hands back underneath your shoulders as you return to the ground.
+This counts as one rep. Note: when lowering to the ground, do your best not to collapse. If this move is too advanced, perform it on your knees in a modified push-up position.
+Complete a total of eight reps.</string>
     <!--<item name="chest_dip">ChestDip</item>-->
     <string name="ChestDip_video">BjiyWC_cJW0</string>
-    <string name="ChestDip_description">BjiyWC_cJW0</string>
+    <string name="ChestDip_description">\tLean forward
+Put your elbows a little bit wider than your shoulders
+Move knees slightly forward, so your body is shaped like a "C"
+Contract your abs to maintain the position
+Keep your head in line with your spine as you go down</string>
     <!--<item name="side_side_pushup">SideToSidePushup</item>-->
     <string name="SideToSidePushup_video">Ro1YZsjJqNE</string>
-    <string name="SideToSidePushup_description">https://youtu.be/Ro1YZsjJqNE?t=5</string>
+    <string name="SideToSidePushup_description">\tAssume a push-up position with your body straight, supported by your extended arms. Your hands should be outside of shoulder width. This will be your starting position.
+Initiate the movement by flexing the elbows and leaning to one side, lowering your torso to the ground.
+Return to the starting position by extending your elbows, pushing yourself back to center.
+On the next repetition lower yourself to the other side, again returning to the starting position after the rep is complete. Continue alternating until the set is finished.</string>
     <!--<item name="elevated_pushup">ElevatedPushup</item>-->
     <string name="ElevatedPushup_video">VTE730D0VIk</string>
-    <string name="ElevatedPushup_description">https://youtu.be/VTE730D0VIk?t=49</string>
+    <string name="ElevatedPushup_description">\tLie on the floor face down and place your hands about 36 inches apart from each other holding your torso up at arms length.
+Place your toes on top of a flat bench. This will allow your body to be elevated. Note: The higher the elevation of the flat bench, the higher the resistance of the exercise is.
+Lower yourself until your chest almost touches the floor as you inhale.
+Using your pectoral muscles, press your upper body back up to the starting position and squeeze your chest. Breathe out as you perform this step.
+After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions.
+</string>
     <!--Chest end-->
 
 
