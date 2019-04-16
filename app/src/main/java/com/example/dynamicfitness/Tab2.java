@@ -87,8 +87,6 @@ public class Tab2 extends Fragment {
             @Override
             public void onClick(View v) {
                 for(Map.Entry<String,?> entry : keys.entrySet()){
-                    Log.d("map values",entry.getKey() + ": " +
-                            entry.getValue().toString());
                     editor.remove(entry.getKey());
                 }
                 editor.apply();
@@ -163,8 +161,6 @@ public class Tab2 extends Fragment {
         Map<String,?> keys = pref.getAll();
 
         for(Map.Entry<String,?> entry : keys.entrySet()){
-            Log.d("map values",entry.getKey() + ": " +
-                    entry.getValue().toString());
             if(entry.getKey().contains("workout")){
                 listDataHeader.add(entry.getKey());
                 List<String> setList = new ArrayList<String>();
