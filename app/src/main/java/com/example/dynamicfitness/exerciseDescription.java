@@ -27,15 +27,18 @@ public class exerciseDescription extends AppCompatActivity {
 
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
-
         webView.getSettings().setBuiltInZoomControls(true);
+
+
         // What to look for
         String videoName = exerciseName + "_"+"video";
         // Id of what you want
         int stringId = getResources().getIdentifier(videoName, "string", exerciseDescription.this.getPackageName());
         // Actually what you want
         String uTubeLink = getResources().getString(stringId);
+
         webView.loadUrl(uTubeLink);
+
 
     }
 }
